@@ -1,0 +1,12 @@
+<div class="card blog-tile" [ngClass]="{'fav': post.isFav}">
+  <div class="card-body">
+    <h5 appHighlight color="lightgreen" class="catd-title">{{post.title}}</h5>
+    <p class="card-text">{{post.summary}}</p>
+    <a href="#" (click)="toggleFav()" class="btn btn-warning blog-button">Favourite</a>
+    <a href="#" class="btn btn-info  blog-button">Read</a>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <button class="btn btn-danger" (click)="updateX($event)">Change X</button>
+</div> -->
